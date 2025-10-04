@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Global presence map</title>
+  <desc id="desc">Stylised dotted world map used as a decorative background.</desc>
+  <defs>
+    <pattern id="dot-pattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#ffffff" fill-opacity="0.35" />
+    </pattern>
+    <mask id="fade">
+      <rect width="1200" height="600" fill="url(#dot-pattern)" />
+    </mask>
+  </defs>
+  <rect width="1200" height="600" fill="none" />
+  <g mask="url(#fade)">
+    <path d="M140 160 L220 120 L320 150 L360 200 L340 240 L380 280 L330 320 L260 300 L220 320 L180 280 L140 300 Z" fill="#ffffff" fill-opacity="0.8" />
+    <path d="M300 320 L360 340 L400 420 L360 500 L320 460 L300 400 L280 360 Z" fill="#ffffff" fill-opacity="0.8" />
+    <path d="M440 180 L520 140 L640 160 L760 120 L880 190 L840 230 L900 260 L860 320 L780 300 L720 340 L660 320 L600 360 L540 330 L500 360 L460 320 L420 260 Z" fill="#ffffff" fill-opacity="0.8" />
+    <path d="M520 260 L580 280 L620 340 L600 420 L540 460 L500 400 L500 320 Z" fill="#ffffff" fill-opacity="0.8" />
+    <path d="M820 360 L880 340 L940 360 L980 400 L940 440 L880 420 L840 400 Z" fill="#ffffff" fill-opacity="0.8" />
+  </g>
+</svg>
