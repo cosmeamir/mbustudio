@@ -118,6 +118,18 @@ body {
   display: flex;
 }
 
+.mil-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
 .mil-vert-between {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1815,6 +1827,16 @@ banner
   width: 100%;
   padding-bottom: 120px;
   position: relative;
+}
+.mil-banner-heading {
+  display: inline-block;
+  position: relative;
+}
+.mil-hero-heading {
+  display: block;
+  max-width: 640px;
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 992px) {
   .mil-banner .mil-banner-content {
