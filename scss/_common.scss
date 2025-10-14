@@ -122,6 +122,21 @@ h1,
     }
 }
 
+.mil-hero-title {
+    font-family: $font-hero;
+    font-weight: 900;
+    letter-spacing: -.02em;
+    text-transform: none;
+
+    @media screen and (max-width: 768px) {
+        letter-spacing: normal;
+    }
+}
+
+.mil-hero-title--accent {
+    color: $accent;
+}
+
 h2,
 .mil-h2 {
     font-size: $h2;
