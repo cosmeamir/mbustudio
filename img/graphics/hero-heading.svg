@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="220" viewBox="0 0 940 220" role="img" aria-labelledby="title desc">
+  <title id="title">Mensagem principal da Mbu Studio</title>
+  <desc id="desc">Texto promocional que diz: O Melhor para a sua empresa está aqui.</desc>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+    text {
+      font-family: 'Outfit', sans-serif;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .light {
+      fill: #9ca1ab;
+      font-weight: 300;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .medium {
+      font-weight: 500;
+    }
+  </style>
+  <rect width="940" height="220" fill="none" />
+  <text x="0" y="92" class="bold" font-size="86">O Melhor</text>
+  <text x="0" y="160" class="light" font-size="62">para a sua</text>
+  <text x="360" y="160" class="bold" font-size="62">empresa</text>
+  <text x="650" y="160" class="light" font-size="62">está aqui</text>
+</svg>
