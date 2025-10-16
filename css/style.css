@@ -3165,6 +3165,191 @@ footer
   }
 }
 
+.mil-footer-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .mil-footer-layout {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mil-footer-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.mil-footer-side {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 1200px) {
+  .mil-footer-side {
+    -ms-flex-preferred-size: 40px;
+        flex-basis: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mil-footer-side {
+    display: none;
+  }
+}
+.mil-footer-side__text,
+.mil-footer-side__link {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.mil-footer-side__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  color: inherit;
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-footer-side__link:hover {
+  color: rgba(255, 152, 0, 1);
+}
+.mil-footer-side__link i {
+  font-size: 16px;
+}
+.mil-footer-side--left .mil-footer-side__text {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mil-footer-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.mil-footer-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .mil-footer-columns {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mil-footer-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.mil-footer-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
+}
+.mil-footer-column--newsletter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  max-width: 380px;
+}
+@media screen and (max-width: 992px) {
+  .mil-footer-column--newsletter {
+    max-width: none;
+  }
+}
+.mil-footer-column--nav,
+.mil-footer-column--links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+.mil-footer-column--nav .mil-footer-menu {
+  margin-bottom: 0;
+}
+.mil-footer-column--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.mil-footer-copy {
+  margin: 0;
+}
+
+.mil-footer-top {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-footer-top i {
+  font-size: 14px;
+}
+.mil-footer-top:hover {
+  color: rgba(255, 152, 0, 1);
+}
+@media screen and (max-width: 992px) {
+  .mil-footer-top {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .mil-subscribe-form {
   position: relative;
   height: 70px;

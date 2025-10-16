@@ -1968,6 +1968,148 @@ footer
     }
 }
 
+.mil-footer-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+
+    @media screen and (max-width: 1200px) {
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+.mil-footer-side {
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $lt-60;
+
+    @media screen and (max-width: 1200px) {
+        flex-basis: 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+
+    &__text,
+    &__link {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        color: inherit;
+        transition: $t-sm;
+
+        &:hover {
+            color: $accent;
+        }
+
+        & i {
+            font-size: 16px;
+        }
+    }
+
+    &--left {
+        .mil-footer-side__text {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.mil-footer-main {
+    flex: 1 1 auto;
+}
+
+.mil-footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    @media screen and (max-width: 1200px) {
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+.mil-footer-column {
+    flex: 1 1 0;
+
+    &--newsletter {
+        flex: 1 1 40%;
+        max-width: 380px;
+
+        @media screen and (max-width: 992px) {
+            max-width: none;
+        }
+    }
+
+    &--nav,
+    &--links {
+        flex: 1 1 30%;
+    }
+
+    &--nav {
+        .mil-footer-menu {
+            margin-bottom: 0;
+        }
+    }
+
+    &--links {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.mil-footer-copy {
+    margin: 0;
+}
+
+.mil-footer-top {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $lt-60;
+    transition: $t-sm;
+
+    & i {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $accent;
+    }
+
+    @media screen and (max-width: 992px) {
+        display: inline-flex;
+    }
+}
+
 .mil-subscribe-form {
     position: relative;
     height: 70px;
